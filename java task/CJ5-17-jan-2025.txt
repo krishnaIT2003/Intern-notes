@@ -1,0 +1,105 @@
+
+POLYMORPHISM IN JAVA:
+     Polymorphism is one of the core concepts of Object-Oriented Programming (OOP) that allows objects to take on multiple forms. The word polymorphism is derived from the Greek words poly (many) and morph (forms), meaning "many forms."
+
+            In Java, polymorphism enables a single interface to be used for different types of objects. This increases flexibility, modularity, and reusability in code.
+
+   two types of polymorphism:
+        compile time polymorphism
+                 Definition: Polymorphism is determined at compile time.
+                 Achieved Through: Method Overloading.
+                 Key Idea: Methods in the same class with the same name but different parameter lists.
+
+
+        run time polymorpism
+            Definition: Polymorphism is determined at runtime.
+            Achieved Through: Method Overriding.
+            Key Idea: A subclass provides a specific implementation for a method that is already defined in its parent class.
+
+        
+
+
+         STATIC BINDING:
+             Definition: The method call is resolved at compile time.
+              Key Features:
+             Used for private, static, and final methods, as well as methods in the same class.
+                Overloading is an example of static binding.
+             Why Static?: Because these methods cannot be overridden, the method to be called is decided during compilation.
+example : Dog dog=new Dog()
+
+
+          DYNAMIC BINDING:
+             Definition: The method call is resolved at runtime.
+          Key Features:
+             Used for overridden methods in an inheritance hierarchy.
+              Method overriding is an example of dynamic binding.
+               Why Dynamic?: Because the actual object being referenced may vary at runtime, the method implementation is determined then.   
+ example: Animal animal=new Dog();
+
+
+   ABSTRACT CLASS:
+
+     An abstract class in Java is a class that cannot be instantiated directly. It serves as a blueprint for other classes and may contain both abstract methods 
+     (without implementation) and concrete methods (with implementation). 
+    
+      Cannot be instantiated: You cannot create objects of an abstract class.
+     Abstract methods:
+      Declared without a body (abstract void methodName();).
+      Must be implemented by subclasses.
+      Concrete methods: Abstract classes can also have methods with implementation.
+     Constructors: Abstract classes can have constructors, which are called when a subclass object is created.
+      Inheritance: Abstract classes are meant to be extended by other classes.
+      
+
+    Why Use Abstract Classes?
+       To provide a common template or base for related classes.
+       To enforce implementation of certain methods in subclasses.
+       To share common behavior among multiple subclasses.
+
+
+     THIS KEYWORD :
+
+            The this keyword in Java is a reference variable that refers to the current object of a class. It is primarily used to eliminate confusion between class attributes and method parameters, and to refer to the current object in various contexts.
+
+                Use this to distinguish between instance variables and method parameters when they have the same name.
+                Use this() to call another constructor within the same class (constructor chaining).
+                Use this to call another method in the same class.
+
+
+     
+   INTERFACE :
+
+         An interface in Java is a blueprint of a class that defines a set of methods that a class must implement. It provides a way to achieve 100% abstraction (before Java 8) and allows classes to adhere to a specific contract without concerning themselves with the actual implementation.
+              All methods in an interface are implicitly public and abstract (before Java 8).
+              From Java 8 onward, interfaces can have default and static methods with implementations.
+              A class can implement multiple interfaces, allowing for a form of multiple inheritance in Java.
+              Interfaces with a single abstract method (FUNCTIONAL INTERFACE) can be used as lambda expressions (introduced in Java 8).
+              Interfaces cannot have constructors because they cannot be instantiated.
+             
+               note: static method in interface can be called using Interface name 
+              
+             Why Use Interfaces?
+               To achieve abstraction.
+               To define a contract that implementing classes must follow.
+               To achieve multiple inheritance.
+               To support polymorphism in design.
+
+
+        Comparison: Abstract Class vs Interface
+Aspect	                 Abstract Class	                                       Interface
+Methods 	Can have abstract and concrete methods	         Abstract, default, and static methods
+Variables	Can have instance variables	           Only static final constants
+Constructors	Can have constructors	                     Cannot have constructors
+Inheritance	Single inheritance	                      Multiple inheritance
+Performance	Slightly faster	                            Slightly slower (due to dynamic dispatch)
+
+
+
+
+
+
+
+
+
+
+ 

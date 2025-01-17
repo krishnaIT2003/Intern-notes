@@ -96,6 +96,37 @@ OBJECT ORIENTED PROGRAMMING:
                
             Association in java defines the connection between two classes that are set up through objects .
                  Association manages one-to-one ,one-to-many,many-to-one, many-to-many relationships
+                  Definition: Association represents a general relationship between two objects. One object "knows about" another object but is not strongly dependent on it
+
+
+
+          AGGREGATION:
+            Definition: Aggregation is a whole-part relationship, where one object "has-a" or "owns" another object.
+              The part can exist independently of the whole.
+               It represents weak ownership.
+
+
+
+          COMPOSITION: 
+
+             Definition: Composition is a stronger form of Aggregation.
+The part cannot exist independently of the whole.
+If the whole is destroyed, the part is also destroyed.
+It represents strong ownership.
+
+
+   
+                Relationship	Type	Real-World Example	Key Features
+Association	"Knows-a"	Teacher ↔ Student	Loosely coupled; objects can exist independently.
+Aggregation	"Has-a"	Team → Players	Whole and part are loosely coupled; parts can exist without the whole.
+Composition	"Part-of"	Book → Pages	Whole and part are tightly coupled; parts cannot exist without the whole.
+
+Association: Models collaboration between objects (e.g., Car and Driver).
+Aggregation: Models reusable relationships (e.g., Department and Employees).
+Composition: Models tight dependencies (e.g., House and Rooms).
+
+
+
 
 
 
