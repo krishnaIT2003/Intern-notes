@@ -1,0 +1,41 @@
+Coding Stadards:
+
+   Coding standards are the rules , guidelines and best practices which help to build standard and strcutred program 
+   The standards can be naming convention, indentation, commenting ,structure and organization.
+   the main reason to keep a code in a standard and structure way to reduce the errors and promote consistency and make code easier to read and maintain
+
+    Coding standards are important because :
+       .to make developers to easy to read and understand
+       .to maintain the strcuture of the code and the task easily
+       .to prevent the confusion when there is a collaboration and multiple developers work on same project(so we follow the standard naming conventions and best practies)
+       .error reduction
+       .clear standards improve productivity
+
+    lets start the standards implementation :
+     
+      1, Naming Conventions: naming convetions are the rules that specify how to name the variables ,functions,classes and other identifiers in the code.   
+                     camelCase: for vairables and functions (ex : userAccount(), userId)
+                      PascalCase: pascalcase is used for class or  types (ex : EmployeeAccount)
+
+                        snake_case: snake_case is used in mostly python and ruby 
+
+
+      2, Indentation and Formatting: proper indentation 
+
+
+
+
+
+
+
+
+
+
+
+
+Sonarlint:
+    sonarlint is  a real time code quality and static analysis tool that help developers catch bugs ,security vulnerabilities,and other issues before even they commit
+
+it gives feedback and helps to spot issues
+
+sonar lint works by analyzing your code and compare it to a set of rules based on best practices, coding standards and know issues

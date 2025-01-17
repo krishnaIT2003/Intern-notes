@@ -1,0 +1,228 @@
+Java is a high-level, object-oriented programming language developed by James Gosling and his team at Sun Microsystems in 1995 (later acquired by Oracle).
+
+The key features of Java are:
+Platform Independent: "Write Once, Run Anywhere" (WORA). Java code can be run on any device or operating system that has a Java Virtual Machine (JVM), which makes it platform-independent.
+ You write code once and it can run anywhere!
+
+Object-Oriented: Everything in Java is an object, and you use classes and objects to structure your programs.
+Secure: Java provides a secure execution environment, which makes it safe to run programs (especially over the internet).
+Multithreading: Java supports running multiple tasks simultaneously (multithreading), which is great for performance in applications that require simultaneous operations (e.g., games, web servers).
+Rich API: Java comes with a vast standard library (called the Java API) to help you with everything from file I/O, networking, graphical interfaces, to database connectivity and more.
+
+
+
+JAVA DEVELOPMENT TOOLS:
+  JDK (Java Development kit): A set of tools need to develop java applicaions (it includes JRE,JVM and other utilities)
+  IDE (Integrated Development Environment): Tools like IntelliJ IDEA, Eclipse, and NetBeans help you write and debug Java programs more efficiently.
+
+
+
+
+
+(JAVA VIRTUAL MACHINE)JVM:
+    the JVM helps the programmers to run the code on any device where it provides platform independence, the jvm will compile the .java code into bytecode which is a .class file.
+    
+    . Class Loader : the jvm loads the .class file into the memory.the class loader is part of Jvm responsble for loading class files at runtime.
+        Boot Class Loader (loads core classes from the JDK libraries).
+        Extension Class Loader (loads classes from the extensions folder).
+        Application Class Loader (loads classes from the classpath you specify).
+
+
+
+     .Bytecode Verification
+         The JVM ensures the loaded bytecode is valid and follows the rules of the Java language. This is to ensure that it doesn’t perform unsafe operations, like accessing restricted
+          memory or executing malicious code.
+
+     . Execution (Interpreter and JIT Compiler)
+           Interpreter: The JVM can read and execute the bytecode instructions one by one. However, this approach can be slow for long-running applications.
+          Just-In-Time (JIT) Compiler: The JVM uses the JIT compiler to compile bytecode into native machine code just before execution. 
+
+      . Garbage Collection
+         One of the JVM's key features is its automatic memory management through Garbage Collection (GC).
+         The JVM automatically tracks objects in memory. When objects are no longer needed (i.e., there are no references to them), the garbage collector reclaims their memory to prevent 
+         memory leaks.
+
+
+      .Runtime Memory Areas
+
+           Method Area: Stores metadata, class definitions, method data, and static variables. It’s shared among all threads.
+           Heap: Stores all the objects created by the program. It’s managed by the garbage collector.
+           Stack: Each thread gets its own stack, which holds local variables, method calls, and partial results. It is used for method execution.
+           Program Counter (PC) Register: Keeps track of the current instruction being executed by the thread.
+           Native Method Stack: Used to support native methods (methods written in languages like C or C++).
+
+
+
+
+    VARIABLES IN JAVA:
+    variables are used to store the data in memory it acts like refernce for a memory
+
+   instance variables : these variables are associated with an instance of an object. these variables are declared inside a class but outside a method or constructor or block. they exists as 
+    long the object is there .each object has its own instance variables
+   
+   Class Variables: these variables are shared by all instances  of a class .these variables are declared with static keyword inside a class ,these variables
+    exists as long as the class is loaded into jvm,all instances refers to same memory address of the static variable
+
+   Local Variables: Local variables are variables that are declared inside  methods constructor or blocks, they exist only during the excecution of the methods or constructor or blocks .
+     they are acessible only within the methods.
+  
+   Final Variables: the variables which are changed once the value is assigned.
+  
+
+
+
+Reference Types
+These variables store references (or addresses) to objects. Objects in Java (like arrays, classes, and interfaces) are reference types. A reference variable does not store the actual
+ data but rather a reference (or memory address) pointing to the object in memory.
+
+
+
+
+
+  DATA TYPES: 
+   
+    primitive data types are the predefined data types in java. there are 8 primitive data types
+   primitive data types:
+    int: 
+       used to store the whole numbers
+        4 bytes 
+        range: - 2 billion to + 2 billion 
+
+    
+    byte:
+       1 byte
+       range: -128 to 127
+
+   short: 
+      2 bytes 
+      range: -32768 to 32767
+
+   long :
+     8 bytes
+     range: larger than int 
+
+    float :
+        used to store decimal numbers 
+      4 bytes 
+     precision: 6 to 7 decimal digits
+       ex: 32.3432f
+
+   double: 
+    8 bytes
+   precision: 15 to 16
+
+   char:
+    2 bytes 
+   range : 0 to 65,535 (unicode characters ,unsigned)
+
+
+   boolean:
+     1 bit 
+      values: true or false
+
+
+
+    Reference DataTypes:
+
+
+      reference data types are used to store references to objects .
+    
+      String, arrays , objects
+
+
+
+
+   JAVA OPERATORS:
+   
+       Arithematic operators : +,-,*,/,%
+       Relational operators: ==,<=,>=,!=,<,>
+       Logical operators:  &&, ||, !
+       BitWise Operator:  &, | ,^, ~,<<,>>,>>>
+       Assignment Operator:  =,+=,-=,*=,/=,%=
+       unary operators: ++,--
+(postincrement: the value is used then incremented or decreased    pre increment: the value is incremented or decreased and then it is used)
+
+       Ternary Operator:  ?:  (used to check for conditional , a shorthand for if else ) 
+
+
+
+    IF ELSE :
+
+     he if-else statement in Java is used for decision-making based on conditions. the condition evalutes based on true or false
+ 
+        if else:
+              if(){}
+              else{}
+
+       if else ladder:
+               if(){}
+               else if(){}
+               else if(){}
+               else{}
+
+      nested if else:
+                 if(){ if(){} else{} }
+                 else { if(){} else{}}
+    
+      Ternary Operator:    shorthand of if else
+                 ex: String valid=age>18? "accept":"reject";
+
+
+
+
+    Switch Statement:
+       The switch statement in Java is a control flow statement that is used to execute one block of code out of many options based on the value of an expression.
+       It's an alternative to using multiple if-else-if statements, offering cleaner and more readable code.
+
+
+
+       Expression Type: The switch expression must evaluate to one of the following types:
+         byte, short, char, int (primitive types)
+          String (introduced in Java 7)
+           enum types
+           Case Values: Each case must have a unique constant value (no variables or ranges).
+         Break Statement: The break statement is used to exit the switch block. Without it, execution "falls through" to the next case.
+         Default Case: The default block is optional and is executed if no other case matches.
+   
+
+
+   LOOPS:
+    loops are control flow statements that allow excecute a block of code repeatedly based on condition 
+      
+      types of loops :
+         for loop, while loop, forEach loop, do-while loop, labeled loop
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+  Hybris:
+
+      hybris is an ecommerce platform,the hybris is built using spring framework,it is designed to build,manage and optimize the online sales.
+in hybris there is a term called interceptor
+where interceptor involves a lifecycle from starting point to end point
+
+1, initInterceptor: it is a staring point where a template will be created with a default values
+2, prepareintercepor: it is the verificaton point where it checks the feilds  like whether the is no negative price and no abnormal character
+3, validateinterceptor: it is the validaion point where its test the data based on business rule before saving it into the data
+4,LoadInterceptor: this interceptor is used to retrieve the data from db when ever there is specific need and when the customer want to purchase specific product 
+5, RemoveInterceptor: this interceptor is used to remove products in a safemode if there are any relationships with the current product which we want to delete it throws an warning
+
+   
+
+
+
+
+
+
+Consignment:
+
+a consignment refers to the goods placed in a warehouse
+we can say a consignment as the goods are placed  in the hands of another party who has a store or commerce to sell it .
+
+workflow scenario:
+when a customer wants to purchase a shirt he will add to cart and make a checkout 
+when he is in checkout status there willl be a validation of db in which warehouse the product is available. if it is not available then it shows a message with the stock is not available
+if it is available the customer is redirected to payment page  and after sucessful payment the order will b confirmed.
+now the product is owned buy commerce store where their responsibility to deliever the order to customer and the consignment team will provide the amount with some percentage criteria to the ownership
+vendor(after the confirmation of product shipped).
+now the consignment team will update their data  and deliever the order
+
+
+
+
+CronJobs:
+
+cronjobs are scheduled task that are executed automatically at specified intervals, cronjobs are the scripts or piece of code  that can be excecuted  on a periodic basis,like importing data,
+performing some db operations and also performing some scripts to maintain machines
+
+we can give specify time for example we can run some maintainence task every night with the help of cronjobs.
+cronjobs automate background tasks.
+
+in hybris we have cronjobmodel class 
+
+
+syntax of cronjobs 
+
+    * * * * * /path/to/command
+    
+    min hour day(1-31) month(1-12) weekday(mon-sun) /path/to/command
+
+       
+    ex:  i want to run a script every weekday from mon to fri at 8 am 
+                0 8 * * 1-5  /path/task.sh
+
+
+
+Promotions:
+
+promotions are special offers , discounts or deals to increase the customer purchase and business growth
+
+when the promotions are published it will be live and can seen by customers 
+when the promotions are unpublished it will be hidden from customers 
+the promotions are published based on the load 
+
+
+if there is a red light indicator we have to wait for other promotions to make unpublished 
+if there is a green light indicator we have to take approval for specific promotions and should make live
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+
+
+
+   LOOPS:
+    loops are control flow statements that allow excecute a block of code repeatedly based on condition 
+      
+      types of loops :
+         for loop, while loop, forEach loop, do-while loop, labeled loop

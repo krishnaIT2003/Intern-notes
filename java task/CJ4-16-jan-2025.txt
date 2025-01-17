@@ -1,0 +1,137 @@
+OBJECT ORIENTED PROGRAMMING:
+            oop is a paradigm where it provides a structure and systematic approach to solve real time problems by modeling them using objects and classes .
+
+
+      .Encapsulation:   
+            Wrapping Data and methods together into a single unit ,typically a class .
+            achieved by using access modifiers and making the fields private and creating getters and setters and providing the access 
+      .Inheritance
+             Allows a class (subclass) to inherit fields and methods from another class (superclass).
+              Achieved using the extends keyword.
+              Promotes code reusability. 
+      .Polymorphism
+             Allows objects to take on many forms:
+            Compile-time Polymorphism: Achieved via method overloading.
+             Run-time Polymorphism: Achieved via method overriding.
+
+
+       .Abstraction
+
+              Hiding implementation details and exposing only essential features.
+                 Achieved using:
+          Abstract classes (abstract keyword).
+             Interfaces
+
+
+            Classes and Objects
+
+                A class is a blueprint for objects, defining their properties and behaviors.
+                An object is an instance of a class.
+
+     
+        Constructor:
+               constructor is a special method to initialize an object 
+                  it has the same name as  the class name with no return type.
+                   the constructor is called automatically when an object is created
+          
+             Types of constructor:
+                       default constructor
+                       parameterized constructor
+                       copy constructor
+
+
+        
+
+        STATIC KEYWORD :
+
+
+          static keywords in java is used to indicate that a member belongs to the class rather than to any specific instances of the class
+         the static members shared to all the objects of the class 
+
+              where we can declare static keyword:
+                   Static variables
+                   static methods 
+                   static blocks
+                   static class (only for nested class we can declare a static keyword )
+
+    
+         static keyword is initalized only once and not with object creation
+        Typically used for constants
+
+
+     static block:
+          a static block is used to initatilize static variables 
+          it is excecuted only once ,when the class is loaded into memory, before any object is created or an static method is called 
+
+
+             Note: static methods are overloaded in java but static methods cannot be overrided because they are bound to class rather than instance
+                      . if we try to override then it will be method hiding   (it hides the child class and the parent will be invoked even we create child object)
+
+
+
+
+
+
+
+     INHERITANCE :
+      
+          inheritance in java allows one class (child class) to acquire the properties of another class (parent class) 
+
+
+           Types Of Inheritance:
+                  Single Inheritance 
+                  Multilevel Inheritance
+                  Hierarchical Inheritance 
+                  Multiple Inheritance (Through interface only)
+                  Hybrid Inheritance (Hierarchical + multiple)
+
+
+
+
+
+
+
+
+           ASSOCIATION:
+               
+            Association in java defines the connection between two classes that are set up through objects .
+                 Association manages one-to-one ,one-to-many,many-to-one, many-to-many relationships
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
+

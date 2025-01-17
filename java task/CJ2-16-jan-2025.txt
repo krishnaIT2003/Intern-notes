@@ -1,0 +1,52 @@
+JAVA OPERATORS:
+   
+       Arithematic operators : +,-,*,/,%
+       Relational operators: ==,<=,>=,!=,<,>
+       Logical operators:  &&, ||, !
+       BitWise Operator:  &, | ,^, ~,<<,>>,>>>
+       Assignment Operator:  =,+=,-=,*=,/=,%=
+       unary operators: ++,--
+(postincrement: the value is used then incremented or decreased    pre increment: the value is incremented or decreased and then it is used)
+
+       Ternary Operator:  ?:  (used to check for conditional , a shorthand for if else ) 
+
+
+
+    IF ELSE :
+
+     he if-else statement in Java is used for decision-making based on conditions. the condition evalutes based on true or false
+ 
+        if else:
+              if(){}
+              else{}
+
+       if else ladder:
+               if(){}
+               else if(){}
+               else if(){}
+               else{}
+
+      nested if else:
+                 if(){ if(){} else{} }
+                 else { if(){} else{}}
+    
+      Ternary Operator:    shorthand of if else
+                 ex: String valid=age>18? "accept":"reject";
+
+
+
+
+    Switch Statement:
+       The switch statement in Java is a control flow statement that is used to execute one block of code out of many options based on the value of an expression.
+       It's an alternative to using multiple if-else-if statements, offering cleaner and more readable code.
+
+
+
+       Expression Type: The switch expression must evaluate to one of the following types:
+         byte, short, char, int (primitive types)
+          String (introduced in Java 7)
+           enum types
+           Case Values: Each case must have a unique constant value (no variables or ranges).
+         Break Statement: The break statement is used to exit the switch block. Without it, execution "falls through" to the next case.
+         Default Case: The default block is optional and is executed if no other case matches.
+   
