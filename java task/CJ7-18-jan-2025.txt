@@ -1,0 +1,121 @@
+
+   ARRAYLIST:
+
+        ArrayList is a resizable array implementation provided by the java.util package. Unlike regular arrays in Java, an ArrayList can dynamically grow and shrink as elements are added
+         or removed.
+
+
+                   Key Features of ArrayList
+
+                   Dynamic Sizing: Automatically resizes when elements are added or removed.
+                    Type Safety: Supports generics to specify the type of elements.
+                      Indexed Access: Provides fast random access to elements using an index.
+                    Allows Duplicates: Duplicate elements are allowed.
+                    Not Synchronized: Multiple threads can cause problems unless explicitly synchronized.
+   
+                            ArrayList<Type> list = new ArrayList<>();
+
+
+
+     LINKEDLIST: 
+
+             LinkedList is a class in the java.util package that implements the List and Deque interfaces. It uses a doubly-linked list data structure to store elements. Unlike ArrayList,
+           which uses a dynamic array,
+          LinkedList provides better performance for certain operations like insertion and deletion at arbitrary positions.
+
+  
+            Key Features of LinkedList
+                     Dynamic Size: The size of a LinkedList grows or shrinks dynamically.
+                   Efficient Insertion/Deletion: Adding or removing elements is faster compared to ArrayList, especially in the middle or beginning.
+                  Slower Random Access: Accessing elements by index is slower as it requires traversal from the head or tail.
+                   Implements Deque: Can be used as a queue (FIFO), stack (LIFO), or deque (double-ended queue).
+                  Allows Duplicates and Nulls: Duplicate elements and null values are allowed.
+
+
+
+       VECTOR IN JAVA:
+   
+             The Vector class in Java is part of the java.util package. It implements a dynamic array that can grow or shrink as needed. Introduced in early versions of Java, Vector is
+ synchronized, making it thread-safe but relatively slower than modern alternatives like ArrayList.
+
+ 
+         Key Features of Vector
+                      Thread-Safety: Vector methods are synchronized, ensuring safe access in multithreaded environments.
+                     Dynamic Resizing: The size of the Vector grows automatically when elements are added beyond its capacity.
+                      Legacy Class: Although still in use, Vector is considered a legacy class. ArrayList is preferred for single-threaded environments due to better performance.
+                  Random Access: Allows fast random access to elements using an index.
+                    Allows Duplicates: Duplicate elements and null values are permitted.
+
+
+
+
+             HASHMAP IN JAVA:
+  
+      A HashMap is a part of the java.util package and represents a collection of key-value pairs, where each key is unique. It is a hash table-based implementation of the Map interface and is used to store data in the form of a key-value pair.
+
+            The HashMap class allows for efficient retrieval and insertion of elements based on keys, typically providing constant time complexity O(1) for these operations.
+
+
+
+       Key Features of HashMap
+             Unique Keys: Each key in a HashMap must be unique, and each key maps to exactly one value.
+               Null Keys/Values: HashMap allows one null key and any number of null values.
+                No Order Guarantee: The order of the elements in a HashMap is not guaranteed and can change over time.
+                  Fast Access: Efficient lookup, insertion, and deletion of elements using hash codes.
+               Not Thread-Safe: HashMap is not synchronized. If thread-safety is required, consider using ConcurrentHashMap.
+
+
+
+       TREE MAP IN JAVA :
+
+           A TreeMap is a part of the java.util package and implements the Map interface. It represents a sorted map, meaning it stores the keys in a sorted order according to their natural ordering or by a comparator provided at the time of map creation.
+
+              Internally, TreeMap is based on a Red-Black Tree (a self-balancing binary search tree), ensuring that operations like get(), put(), and remove() are performed in logarithmic time (O(log n)).
+
+
+
+
+               Key Features of TreeMap
+                    Sorted Order: It keeps the keys in a sorted order (ascending by default).
+                     Navigable Map: Implements the NavigableMap interface, which provides methods to access the keys in a sorted order.
+                     Allows Null Values: TreeMap allows null values, but does not allow null keys.
+                      No Duplicate Keys: Like other map implementations, it does not allow duplicate keys.
+                      Thread-Safety: TreeMap is not synchronized. If thread-safety is required, use Collections.synchronizedMap() or ConcurrentSkipListMap.
+
+
+
+         LINKED HASHMAP IN JAVA:
+  
+            LinkedHashMap is a Hash table and linked list implementation of the Map interface. It is similar to HashMap, but it also maintains a linked list of the entries in the map,
+             which preserves the insertion order (or the order in which entries are added to the map).
+              In other words, while HashMap does not guarantee any order of its keys, LinkedHashMap maintains the insertion order by default. 
+
+     
+                Key Features of LinkedHashMap
+                         Insertion Order: The order of elements is preserved based on the order in which they were added to the map.
+                         Allows Null Values and Keys: LinkedHashMap allows null values and one null key.
+                        Faster Iteration: Iterating over a LinkedHashMap is faster than HashMap because it uses a doubly-linked list to maintain the order of entries.
+                         Consistent Performance: Like HashMap, the time complexity for operations like get(), put(), and remove() is O(1) on average.
+                         Optional Ordering Modes: You can create a LinkedHashMap that maintains the access order (i.e., elements are ordered by the order of access rather than insertion).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

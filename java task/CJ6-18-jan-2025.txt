@@ -1,0 +1,78 @@
+
+
+ EXCEPTION HANDLING:
+  
+             Exception Handling in Java is a powerful mechanism to handle runtime errors, allowing the normal flow of the program to be maintained. It helps to manage unexpected 
+              conditions that arise during the execution of the program, such as input errors, file handling issues, or network problems.
+
+               Java uses try-catch blocks to handle exceptions, and it follows a specific hierarchy and flow for dealing with errors.
+
+
+           Exception:
+
+               An exception is an event that disrupts the normal flow of the program’s execution.
+                  Exceptions can be either checked or unchecked.
+             
+             Error:
+
+              Errors are serious problems that a program cannot typically recover from (e.g., OutOfMemoryError).
+               Errors are not handled by the program using exception handling.
+
+ 
+         Types of Exceptions:
+
+                Checked exceptions: Exceptions that must be either caught or declared to be thrown. (e.g., IOException, SQLException)
+                Unchecked exceptions: Subclasses of RuntimeException. These exceptions do not need to be explicitly handled. (e.g., NullPointerException, ArithmeticException)
+
+
+               Throwable is the parent class of all errors and exceptions.
+
+
+              Handling Excetions in Java:
+  
+                        try-catch Block
+                            A try block is used to enclose the code that might throw an exception. If an exception occurs, it is caught by a catch block.
+
+                               finally Block
+                             The finally block is used to execute important code, such as resource cleanup, whether an exception is thrown or not. It is optional but useful when you need
+                              to ensure that certain code runs.
+
+
+
+                          The throw keyword is used to explicitly throw an exception. You can throw both checked and unchecked exceptions.
+                                          throw new ExceptionType("Message");
+
+
+             throws Keyword
+         The throws keyword is used in a method signature to indicate that a method can throw exceptions. This is used for checked exceptions that the calling method must handle.
+                   public void method() throws ExceptionType {
+    // Code that may throw an exception
+                     }
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

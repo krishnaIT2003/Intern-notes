@@ -94,6 +94,194 @@ Inheritance	Single inheritance	                      Multiple inheritance
 Performance	Slightly faster	                            Slightly slower (due to dynamic dispatch)
 
 
+   PACKAGES:
+     In Java, a package is a namespace that organizes classes and interfaces, making them easier to manage and access. Think of it as a folder in your computer where related files are grouped together. Packages help avoid naming conflicts and provide access protection for classes.
+
+
+            Types of Packages in Java
+             Built-in Packages: Predefined packages provided by Java (e.g., java.util, java.io, java.net).
+             User-defined Packages: Packages created by developers to organize their code.
+
+         Why Use Packages?
+           Organize Code: Group related classes and interfaces together.
+           Avoid Naming Conflicts: Prevent clashes between classes with the same name.
+          Access Protection: Control access to classes and methods.
+          Reusability: Packages can be easily imported and reused across multiple projects.
+
+
+
+ Compiling and Running the Code
+Compile: Use the -d flag to specify the base directory for the package.
+javac -d . MyClass.java
+
+This creates a folder mypackage and stores MyClass.class inside it.
+
+Run: Use the fully qualified class name to run the program.
+java mypackage.MyClass
+
+
+  Access Modifiers in Java:
+       Access modifiers in Java determine the visibility and accessibility of classes, methods, variables, and constructors. They help define how members of a class can be accessed from 
+        other classes or packages.
+
+                Private Access Modifier
+                        Scope: Visible only within the class where it is declared.
+                        Use Case: To encapsulate data and prevent external access.
+               
+              
+                Default (Package-Private) Access Modifier
+                Scope: Visible to all classes within the same package.
+                Use Case: For package-level functionality.
+
+         Protected Access Modifier
+Scope:
+Visible to classes in the same package.
+Visible to subclasses, even in different packages.
+Use Case: For inheritance where subclasses need access to superclass members.
+
+
+Public Access Modifier
+Scope: Visible to all classes everywhere (global access).
+Use Case: For APIs or functionalities intended to be accessed from anywhere.
+
+
+Real-Life Analogy
+Private: Your ATM PIN (only you can access it).
+Default: Office files visible only to coworkers.
+Protected: Family photos shared with extended family.
+Public: Public park accessible by everyone.
+
+
+
+we cant give private and protected to the top classes 
+we can only give private and protected to the nested classes
+
+
+
+ GARBAGE COLLECTION:
+  
+                Garbage Collection (GC) in Java is the process of automatically reclaiming memory by removing unused objects from the heap.
+                 It is part of Java's memory management and ensures efficient utilization of memory, preventing memory leaks.
+          
+                 it is built in jvm
+                     Heap Memory Focus: Only objects in the heap are managed by the Garbage Collector.
+
+             Reference Checking:
+                The Garbage Collector monitors whether an object is referenced.
+                 If no references exist, the object becomes eligible for garbage collection.
+
+                 GC Algorithm Execution:
+                  The Garbage Collector runs to free memory by reclaiming unreachable objects.
+
+
+               You can suggest garbage collection using:
+                           System.gc(); // Suggests the JVM to run garbage collection
+                            Runtime.getRuntime().gc(); // Alternative suggestion
+
+            Garbage Collection Process
+                     Mark: Identify objects that are still in use (reachable).
+                         Sweep: Remove unused objects from memory.
+                           Compact: Rearrange memory to avoid fragmentation (optional).
+
+            
+                System.gc() or Runtime.getRuntime().gc() can suggest the JVM to run the garbage collector, and when an object is garbage collected,
+                 its finalize() method will be invoked before the memory is reclaimed.
+
+
+
+
+
+              FINAL KEYWORD:
+
+
+                final with Variables
+                     A variable declared as final becomes a constant—it cannot be reassigned after being initialized.
+                       Key Points:
+                  Local Variables:
+                        Must be initialized at the time of declaration or in the constructor.
+                  Instance Variables:
+                       Can be initialized in the constructor if not initialized during declaration.
+                      Static Final Variables:
+                         Commonly used to define constants.
+                                  Must be initialized at the time of declaration or in a static block.
+
+
+
+               final with Methods
+                   A method declared as final cannot be overridden by subclasses.
+
+             final with Classes 
+                A class declared as final cannot be extended.
+
+            Note: for final methods we can overload the methods but we cant override the methods.
+
+      
+  
+              Variable	Cannot change its value after initialization.
+              Method	Prevents overriding in subclasses.
+              Class	Prevents inheritance; no subclass can be created.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
