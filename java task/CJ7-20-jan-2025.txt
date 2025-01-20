@@ -1,0 +1,164 @@
+
+    HASHSET IN JAVA:
+
+             HashSet is a part of the Java Collections Framework and implements the Set interface. It is designed to store a collection of unique elements and is backed by a HashMap.
+
+
+           
+
+        
+       Key Features:
+
+            No Duplicates: HashSet does not allow duplicate elements.
+           Unordered: Elements are stored in a random order; the insertion order is not maintained.
+             Allows Null: Only one null value is permitted.
+              Efficiency: Provides constant time performance (O(1)) for operations like add, remove, and contains, assuming proper hash function distribution.
+             Thread Safety: HashSet is not synchronized, meaning it is not thread-safe by default.
+
+
+
+
+     TREE SET IN JAVA:
+
+
+  TreeSet is part of the Java Collections Framework and implements the NavigableSet interface, which extends the SortedSet interface. It is used to store unique elements in a sorted and ordered manner.
+    Internally, it uses a Red-Black Tree (a self-balancing binary search tree) to maintain elements in sorted order.
+
+
+    Sorted Order:
+
+By default, elements are sorted in their natural order (ascending).
+Custom sorting can be applied using a Comparator.
+No Duplicates:
+
+TreeSet does not allow duplicate elements.
+Efficient Operations:
+
+Basic operations like add(), remove(), and contains() have a time complexity of O(log n).
+NavigableSet Features:
+
+Supports methods like floor(), ceiling(), lower(), higher() to retrieve elements based on conditions.
+Thread Safety:
+
+TreeSet is not synchronized, meaning it is not thread-safe by default.
+
+
+
+LINKED HASH SET IN JAVA:
+
+   LinkedHashSet is part of the Java Collections Framework and implements both the Set and NavigableSet interfaces. It is an extension of HashSet with a key distinction: it maintains the insertion order of elements.
+
+
+    Internally, LinkedHashSet uses a hash table for storage (like HashSet), but it also uses a linked list to maintain the order of elements. 
+              This allows you to preserve the order while still benefiting from the performance advantages of HashSet.
+
+
+
+
+
+            Key Features of LinkedHashSet
+             Maintains Insertion Order:
+
+                       Unlike HashSet, which does not guarantee any specific order, LinkedHashSet maintains the order in which elements were inserted.
+                      No Duplicates:
+
+                  Like HashSet, it does not allow duplicate elements. If you try to add a duplicate element, it won't be inserted.
+              Performance:
+
+                The time complexity for basic operations like add(), remove(), and contains() is still O(1), but maintaining insertion order adds some overhead compared to HashSet.
+              Allows Null:
+
+             LinkedHashSet allows one null element, similar to HashSet.
+                Not Synchronized:
+
+                  It is not thread-safe by default. If you need thread safety, you should use Collections.synchronizedSet() or other synchronization mechanisms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+HASH TABLE IN JAVA:
+
+   Hashtable is part of the Java Collections Framework and is a collection of key-value pairs, much like HashMap. It implements the Map interface, which means it is used to store data in the form of key-value pairs, where each key 
+   is unique.
+
+        The major difference between Hashtable and HashMap is that Hashtable is synchronized, making it thread-safe, but less efficient in concurrent environments compared to HashMap.
+
+
+                Key Features of Hashtable
+          Thread Safety:
+
+           Hashtable is synchronized, which means it is thread-safe. Multiple threads can access it concurrently without causing data corruption.
+               However, the synchronized nature also makes Hashtable slower compared to HashMap in non-concurrent environments.
+           Null Keys and Values:
+
+                Hashtable does not allow null keys or values. If you try to insert null, it will throw a NullPointerException.
+                   HashMap allows one null key and multiple null values.
+             Iteration Order:
+
+                   Like HashMap, Hashtable does not guarantee any specific order of the elements. If order is important, you can use LinkedHashMap or TreeMap instead.
+              Legacy Class:
+
+                  Hashtable is considered a legacy class, and modern Java code should prefer using HashMap or ConcurrentHashMap for thread safety and performance reasons.
+
+
+
+
+
+    VECTOR IN JAVA:
+
+
+        Vector is a class in Java that implements a resizable array. It is part of the java.util package and extends the AbstractList class while implementing the List interface. Introduced in JDK 1.0, it was one of the early collection classes in Java.
+
+     While Vector is similar to ArrayList, the key difference is that Vector is synchronized, making it thread-safe. 
+
+
+
+
+              Key Features of Vector
+             Resizable Array:
+
+                       Just like ArrayList, Vector uses a dynamic array that grows as needed.
+                Synchronized:
+
+                     All methods of Vector are synchronized, making it thread-safe. However, this synchronization may lead to performance issues in single-threaded scenarios.
+                Legacy Class:
+
+                        It is considered outdated, with ArrayList being the preferred choice in most cases.
+                Allows Null:
+
+                      Vector allows storing null elements.
+               Duplicates Allowed:
+
+                      It allows duplicate elements, as it implements the List interface.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

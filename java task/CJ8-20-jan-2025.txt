@@ -1,0 +1,81 @@
+
+
+        LAMBDA EXPRESSION:
+
+         A lambda expression is a compact way of representing a method using just its parameters and body. Think of it as an anonymous function that you can use wherever you need a quick implementation of a functional interface.
+
+
+       parameter_list: The input parameters, like method arguments.
+           ->: Lambda operator.
+       body_of_function: The code executed when the lambda is called.
+
+
+
+  
+       Why Use Lambda Expressions?
+                Conciseness: Reduces boilerplate code.
+                   Readability: Simplifies code for small operations.
+                 Functional Programming: Allows treating functions as first-class citizens.
+             Parallel Processing: Simplifies working with streams and parallel computations.
+
+
+
+
+    FUNCTIONAL INTERFACES:
+
+  
+      A functional interface is an interface with exactly one abstract method. This makes them perfect for lambda expressions, which provide an implementation for the single method.
+
+
+       The java.util.function package provides pre-defined functional interfaces for common use cases, such as predicates, consumers, and suppliers. Here’s a breakdown:
+
+              
+
+ Predicate<T>:
+The Predicate<T> interface is used to test a condition. It has one abstract method:
+
+A Predicate tests a condition on the input and returns a boolean (true or false). It's like a filter or a "yes/no" question.
+
+Scenario: Filtering Even Numbers
+Imagine you're sorting numbers, and you want to keep only the even ones.
+
+
+
+
+
+Function<T, R>:
+
+A Function takes an input of type T, processes it, and returns a value of type R. It’s like a transformation or mapping operation.
+
+Scenario: Converting Strings to Uppercase
+Imagine you want to capitalize all names in a list.
+
+
+
+
+
+
+
+Consumer<T>: The "Performer"
+A Consumer accepts a value and performs an operation on it without returning anything. It’s like a worker that processes items but doesn't produce a new output.
+
+Real-world Example: Print all items in a list.
+Think of Consumer as someone who takes something and does something with it, but never gives anything back. It's all about performing an action with the input value.
+
+Example:
+   there is A and B
+now  A want to send data to B with the help of C
+now C is the consumer 
+C takes the data from A and send to B 
+and C doesnt even send the acknowledgement also to A
+
+
+
+
+
+
+Supplier<T>: The Creator
+A Supplier generates a value when called. It doesn’t take any input, just supplies a value.
+
+Scenario: Generating Random Numbers
+Imagine you need a random number generator.
