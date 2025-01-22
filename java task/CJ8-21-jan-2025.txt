@@ -1,0 +1,136 @@
+
+LAMBDA EXPRESSIONS:
+
+
+      A lambda expression is a short block of code that takes in parameters and returns a value.
+         It’s like a function without a name, used to simplify functional interfaces (interfaces with a single abstract method, e.g., Runnable or Comparator).
+
+    
+       Functional Interfaces
+Lambda expressions work with functional interfaces. Some common ones in java.util.function:
+
+Functional Interface            	Method	                            Example
+Consumer<T>	                accept(T t)	                x -> System.out.println(x)
+Supplier<T>	                  get()	                               () -> Math.random()
+Function<T, R>                  apply(T t)                               	x -> x * 2
+Predicate<T>	                    test(T t)                                       	x -> x > 0
+BiFunction<T, U, R>           	apply(T t, U u)                   	(a, b) -> a + b
+
+
+
+
+
+FUNCTIONAL INTERFACES:
+
+
+A functional interface is an interface with exactly one abstract method. It can have any number of default or static methods, but there must only be one abstract method.
+ This is a key feature in Java’s support for functional programming, particularly in lambda expressions.
+
+
+Think of a functional interface as a contract that ensures a single action (abstract method) is guaranteed, making it perfect for lambda expressions and method references.
+
+
+    Analogy:
+   
+         Imagine a magic box. This box can perform one special task, but it can do other things too (like having default behavior, e.g., opening with a key, or shutting with a button). The "magic task" is your single abstract method.
+
+
+
+   Default Method In Java 8:
+
+
+         In Java, default methods are a feature introduced in Java 8 that allow you to define methods with a body (implementation) inside an interface. This was a big leap forward because, before Java 8, 
+            interfaces could only have abstract methods.
+
+
+       Extending Interfaces Without Breaking Code: If a new method is added to an interface, existing implementations won’t break because the default method provides a fallback implementation.
+                  Reusable Code: It allows common logic to be shared among classes implementing the interface.
+
+
+  
+    
+
+
+
+
+    STATIC METHOD  :
+
+        static methods are methods that belong to the class rather than to any specific instance of the class. They are declared using the static keyword and can be called without creating an object of the class.
+
+
+       Key Characteristics of Static Methods
+            Class-Level Access:
+                  Static methods can be called directly using the class name.
+                  Example: ClassName.methodName();
+
+                  No Instance Variables:
+                      They cannot directly access non-static instance variables or instance methods because they are not tied to any specific object.
+
+                      Access to Static Members:
+                           Static methods can access only:
+
+                       Other static methods
+                               Static variables or fields
+                                       Utility Functions:
+                                      Static methods are often used to create utility or helper methods (e.g., Math.sqrt()).
+
+
+
+
+
+                 STATIC VARIABLE :     When you declare a variable as static, it belongs to the class rather than any specific object. All objects of the class share the same copy of the variable.
+
+                       Scope:The static variable exists from the moment the class is loaded into memory until the class is unloaded.
+
+
+
+           STATIC METHOD:   A static method belongs to the class and can be used without creating any objects.Static methods cannot access non-static variables or methods directly because they don’t belong to any specific object.
+                                      They exist at the class level.
+
+   
+                 .............................Why Can't Static Methods Access Instance Variables or Methods?...............................
+                                   Static Belongs to the Class:
+                              Static methods are loaded when the class is loaded, and they exist independently of any instance. They don’t have a reference to any specific object, so they can't know which instance variable or method 
+                                 to access.
+
+                                    Instance Belongs to the Object:
+                                 Instance variables and methods are tied to a specific object. Without an object, there’s no context for static methods to access those instance members.
+
+
+
+
+ 
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

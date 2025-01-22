@@ -19,10 +19,47 @@
                Errors are not handled by the program using exception handling.
 
  
+
+
+
+
+
+
+Checked Exceptions:
+
+These are like formal invitations: you must RSVP (handle them or declare them).
+Java forces you to deal with them because they represent predictable, recoverable issues.
+Example: If you're reading a file that might not exist, Java wants you to handle that situation.
+
+
+
+
+
+Unchecked Exceptions:
+These are like surprises: you don’t have to RSVP, but you should be prepared for them.
+Java doesn’t force you to handle them because they usually occur due to programming bugs or unforeseen issues.
+Example: Dividing by zero or accessing a null object.
+
+
          Types of Exceptions:
 
                 Checked exceptions: Exceptions that must be either caught or declared to be thrown. (e.g., IOException, SQLException)
+                  Examples:
+                          IOException (file not found)
+                           SQLException (database connection failure)
+                          ClassNotFoundException (loading a missing class)
+
+
+
+
                 Unchecked exceptions: Subclasses of RuntimeException. These exceptions do not need to be explicitly handled. (e.g., NullPointerException, ArithmeticException)
+                      NullPointerException (forgot to initialize an object)
+                             ArithmeticException (division by zero)
+                          ArrayIndexOutOfBoundsException (accessing invalid index)
+
+Remember This Rule of Thumb:
+Checked Exceptions = Compile-Time Checks (Compiler complains if you don’t handle them).
+Unchecked Exceptions = Run-Time Issues (They blow up while running the program).
 
 
                Throwable is the parent class of all errors and exceptions.
@@ -51,6 +88,35 @@
 
    
     
+
+EXCEPTION PROPAGATION :
+
+
+   Exception Propagation refers to the process of passing an exception from one method to another up the call stack. When an exception occurs in a method, it can either be handled in that method using a try-catch block, or it can be 
+   propagated to its caller. This process continues until the exception is either caught and handled or reaches the top of the call stack (the main method), where it results in program termination if unhandled.
+
+
+
+     How Exception Propagation Works
+                 Checked Exceptions:
+                     These are exceptions that must be either caught or declared in the method signature using the throws keyword.
+                 If not handled in the current method, the exception is propagated up the call stack.
+              Unchecked Exceptions:
+                     These are exceptions that don't require explicit declaration in the method signature.
+                  They are automatically propagated up the call stack.
+
+
+    
+               Unchecked vs. Checked:
+                      Unchecked exceptions (like ArithmeticException, NullPointerException) propagate automatically.
+                      Checked exceptions (like IOException, SQLException) must be explicitly declared or caught.
+
+
+                Handling the Exception Early:
+                       Exception propagation can be stopped at any level by handling the exception using a try-catch block.
+                                  throws Keyword:
+                                 You can explicitly declare a method to propagate exceptions using throws
+
 
 
 

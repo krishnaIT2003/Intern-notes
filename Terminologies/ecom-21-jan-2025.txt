@@ -1,0 +1,46 @@
+
+DROP SHIP VENDOR (DSV):
+
+  A drop shipping model, where the retailer (eCommerce store) 
+   does not keep inventory in stock. Instead, when an order is placed, the retailer sends the order directly to a third-party vendor (drop shipper) who fulfills and ships the product directly to the customer.
+
+    The retailer handles the sales process, customer service, and marketing, while the vendor manages inventory and shipping.
+
+
+Note: In DSV, the retailer doesn't hold the product in stock. Instead, the vendor (like Puma) ships directly to the customer after receiving the order.
+
+    Example:
+   In this case, here's how the process would work in a Drop Ship Vendor (DSV) model:
+
+            Customer purchases a Puma product on Amazon's eCommerce platform.
+         Amazon (the retailer) processes the order and receives payment.
+           Instead of Amazon having the product in its own warehouse, Amazon will notify Puma (the vendor) to fulfill the order.
+         Puma (the vendor) will then pick the product from its warehouse and ship it directly to the customer.
+           Amazon does not handle the shipping; Puma is responsible for shipping the product directly to the customer's destination.
+         
+  In this model:
+          Puma handles the inventory and shipping directly to the customer.
+         Amazon acts as the marketplace platform where the transaction takes place but does not hold the product in its own warehouse.
+
+
+
+
+
+DISTRIBUTION CENTER ORDERS (DC):
+  
+    A distribution center is a facility where inventory is stored, sorted, and shipped from. In the DC order model, eCommerce stores fulfill orders from their own warehouses or distribution centers.
+      The retailer or company directly manages inventory and logistics, and orders are shipped from the DC to the customer.
+    DC orders offer more control over inventory management and fulfillment but require maintaining and managing a physical distribution center.
+
+
+In DC, the retailer (like Amazon) holds the inventory in its own warehouse and is responsible for picking, packing, and shipping the product to the customer.
+
+In the DC (Distribution Center) model, the process works a bit differently, with more control over the entire supply chain. Here's how it typically works:
+
+Customer purchases a Puma product on Amazon's eCommerce platform (or any other retailer's platform).
+
+Amazon (the retailer) has the Puma product already in its own warehouse (distribution center) or fulfillment center, or it could be stored at a third-party warehouse Amazon operates.
+
+Amazon picks the product from its warehouse (DC) and ships it directly to the customer.
+
+In this model, Amazon is responsible for both holding inventory and fulfilling the order. The products are stocked and managed by Amazon, which then fulfills the orders when customers make a purchase.
