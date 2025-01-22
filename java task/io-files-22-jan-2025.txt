@@ -1,0 +1,182 @@
+
+         INPUT OUTPUT FILES: 
+
+                      Java I/O refers to the process of reading and writing data between a program and its external environment.
+                       It typically involves reading input from sources like files, keyboard, or network and writing output to destinations like files, the screen, or network.
+
+
+                       In Java, Streams are the primary abstraction to handle I/O. A stream is like a conveyor belt—it moves data from one point to another.
+
+
+
+
+                Two Main Types Of Streams :
+
+
+                              Byte Streams: Handle raw binary data, like reading or writing files that contain images, audio, etc.
+
+                              Character Streams: Handle character data (text), reading or writing text-based files.
+
+
+
+       
+            Byte Streams: 
+
+                   Byte streams are used for reading/writing raw binary data like image files, video files, or any other non-text files.
+
+
+
+                                   Key Classes for Byte Streams:
+
+                                                      InputStream (parent class) and OutputStream (parent class)
+                                                Examples: FileInputStream, FileOutputStream, BufferedInputStream, BufferedOutputStream
+
+
+
+
+
+               Character Streams: 
+   
+                             Character streams are used for reading and writing text files. These streams handle Unicode characters and automatically convert bytes to characters and vice versa.
+
+
+                Key Classes for Character Streams:
+
+                                 Reader (parent class) and Writer (parent class)
+                                   Examples: FileReader, FileWriter, BufferedReader, BufferedWriter
+
+
+  
+ 
+
+         Explanation:
+
+                     FileReader reads characters from a file, converting the byte data to characters.
+                    FileWriter writes characters to a file.
+                     These are easier to work with than byte streams when dealing with text files.
+
+
+
+    BufferdStreams :
+
+             Buffering means storing data in memory temporarily before writing or reading to/from a stream. Buffered streams help improve performance when reading or
+              writing large amounts of data because they reduce the number of I/O operations by reading/writing in large chunks rather than one byte or one character at a time.
+
+
+                 Key Classes:
+
+                      BufferedReader and BufferedWriter (for text)
+                      BufferedInputStream and BufferedOutputStream (for binary data)
+
+
+
+                  Explanation:
+
+                         BufferedReader reads lines of text from a file more efficiently.
+                              BufferedWriter writes data to a file efficiently.
+                             Buffered streams are faster because they buffer data in memory.
+
+
+
+
+
+         SERIALIZATION AND DESERIALIZATION:
+
+        Serialization is the process of converting an object into a stream of bytes (to save it to a file or send over a network), 
+          deserialization is the reverse—converting the byte stream back into an object.
+
+
+         Serializable Interface: To serialize an object, the class must implement the Serializable interface.
+
+              Why Use Serialization?
+                    Persistence: Save the state of an object to a file or database.
+                        Communication: Transfer objects between different parts of a system or across a network (e.g., sending data between client and server).
+                     Caching: Store objects in a cache for faster access later.
+
+
+        Explanation:
+
+                  Serializable: This marker interface tells Java that an object can be serialized.
+                   ObjectOutputStream: Writes an object to a stream.
+                  ObjectInputStream: Reads an object from a stream.
+                  Serialization is useful for saving object state to a file or sending it over the network.
+
+
+              ObjectOutputStream: To Serialize
+               ObjectInputStream:  To DeSerialize
+
+
+
+                     
+           Important Notes:
+                serialVersionUID:
+
+                           It's a unique identifier for a class during serialization.
+                           Helps to ensure compatibility between serialized objects and their class definitions.
+                           If serialVersionUID is not explicitly declared, Java generates it automatically, but changes in the class may break compatibility.
+
+                 Transient Keyword:
+                               Fields marked as transient are not serialized.
+                                 Use it for sensitive or irrelevant data.
+
+                       Static Fields:
+
+                                Static fields belong to the class, not instances, so they are not serialized.
+           
+                         Serializable Interface:
+
+                               It is a marker interface (doesn't have methods).
+                                Used to signal that the class can be serialized.
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
