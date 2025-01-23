@@ -1,0 +1,147 @@
+
+      MULTITHREADING IN JAVA:
+
+        Multithreading is a feature that allows multiple threads (small units of a process) to execute simultaneously. It helps in achieving parallelism and better CPU utilization.
+
+
+
+        Key Concepts:
+               Thread: The smallest unit of execution in a program.
+                Multithreading: Running multiple threads concurrently.
+                 Concurrency: Running multiple tasks at the same time.
+                  Parallelism: Running tasks on multiple processors at the same time.
+
+
+
+    
+       Why Use Multithreading?
+                Faster Execution: Tasks run in parallel, reducing execution time.
+                 Efficient CPU Usage: Utilizes idle CPU cycles.
+                 Improved Responsiveness: Useful in GUI apps (e.g., responsive UI while downloading a file).
+                 Real-world Modeling: Mimics real-world systems like handling multiple users in web servers.
+
+
+
+
+    
+           THERE ARE TWO WAYS TO CREATE A THREAD:
+
+
+                   .  By extending Thread Class
+                    
+                    . By Implementing Runnable Interface
+
+
+
+
+  
+           start(): Starts the thread and invokes run() on a new thread.
+          run(): The code you want the thread to execute.
+
+
+
+ 
+          THREAD LIFECYCLE: 
+
+
+                New: When a thread object is created but not started.
+                Runnable: When start() is called, but the thread is waiting for CPU.
+                Running: When the thread is executing.
+                Blocked/Waiting: When the thread is paused (e.g., waiting for I/O or lock)
+                Terminated: When the thread finishes execution.
+
+
+
+   Thread Syncrhonization:
+  
+     When multiple threads access shared resources (like variables or files), you need to prevent race conditions by synchronizing them.
+
+                 we can declare syncrhonized in two ways:
+
+                             . at method signature 
+                             . synchronized block
+
+
+
+ 
+
+        THREAD POOLING :
+
+            Thread pools manage a group of worker threads, reusing them for multiple tasks instead of creating new threads every time.
+
+           instead of creating a new thread for each task, Thread Pooling involves creating a fixed number of threads (or a dynamic pool) and reusing them to execute multiple tasks.
+
+
+
+        Callable Interfae: The Callable interface is similar to Runnable, but it can return a result and throw checked exceptions, making it more flexible.
+
+     Future Interface: Future represents the result of an asynchronous computation. It allows you to retrieve the result of a Callable once it completes.
+                                       It provides methods for checking if the task is complete, canceling the task, and getting the result of the computation.
+
+
+
+
+    DEADLOCKS:  
+
+
+        A deadlock occurs when two or more threads are unable to proceed because they are each waiting for the other to release resources. This causes the threads to be stuck, unable to make progress.
+
+In simpler terms:
+
+Thread A is holding Resource 1 and waiting for Resource 2.
+Thread B is holding Resource 2 and waiting for Resource 1.
+This creates a cycle of dependency, resulting in both threads waiting forever for each other.
+
+
+
+
+
+
+ReentrantLock :
+
+   ReentrantLock is part of the java.util.concurrent.locks package and provides more advanced and flexible locking mechanisms than the traditional synchronized block or method.
+
+
+
+
+           Key Features of ReentrantLock:
+
+                  Reentrant: If a thread already holds the lock, it can acquire it again without getting blocked.
+                   Explicit Locking: Unlike synchronized, you need to explicitly lock and unlock the resource.
+                     Try-Lock: It allows non-blocking attempts to acquire the lock.
+                      Fairness: You can create a fair lock that gives access to threads in the order they requested.
+                         Interruptible Lock: Threads can be interrupted while waiting for a lock.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
