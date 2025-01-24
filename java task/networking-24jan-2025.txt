@@ -1,0 +1,16 @@
+
+
+  JAVA NETWORKING :
+
+      Networking involves communication between computers/devices using protocols like HTTP, FTP, TCP/IP
+
+
+
+  
+         Java provides several classes in the java.net package for building networked applications. Common ones include:
+
+
+                    Socket: For client-side communication.
+                    ServerSocket: For server-side communication.
+                     URL and URLConnection: For interacting with web resources.
+                     DatagramSocket: For UDP communication.

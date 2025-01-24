@@ -1,0 +1,73 @@
+
+
+     ANNOTATIONS IN JAVA:
+
+
+          annotations are a form of metadata that provide data about a program but do not change the program's behavior. An annotation in Java is used to give additional information about the code to the compiler,
+           development tools, or libraries, without changing the code itself.
+
+  
+        
+        What Are Annotations?
+             Annotations are defined by using the @ symbol followed by the annotation name. They can be applied to various program elements like classes, methods, fields, parameters, and even packages.
+              	 Annotations do not directly affect the program execution but can be used to convey information or influence how the code behaves.
+
+
+
+         
+                   Custom Annotations:
+    
+                           To define a custom annotation, use the @interface keyword. You can also define elements (methods) inside the annotation, but these methods can only return values, not execute logic.
+
+
+
+                
+      
+                   Retention Policy of Annotations:
+                             
+                              The retention policy of an annotation determines where the annotation can be accessed: at compile-time, runtime, or class load time. You can specify the retention policy using the @Retention annotation.
+
+
+       
+                                     @Retention(RetentionPolicy.RUNTIME): The annotation will be available at runtime, allowing reflection-based access.
+                                 
+                                      @Retention(RetentionPolicy.CLASS): The annotation is available at compile-time but is discarded during runtime (default behavior).
+
+                                       @Retention(RetentionPolicy.SOURCE): The annotation is discarded during compilation
+
+
+
+
+ 
+        
+               Meta Annotations :
+
+
+                   @Retention: Specifies how long annotations are retained.
+                   @Target: Specifies where the annotation can be applied (e.g., methods, fields, classes).
+                   @Documented: Indicates that an annotation should be documented by the Javadoc tool.
+                   @Inherited: Indicates that an annotation can be inherited by subclasses.
+
+
+
+
+                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
